@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#presentation">Présentation</a> 
+        <a href="#stage">Stage</a>
+        <a href="#competences">Compétences</a>
+        <a href="#Veille">Veille</a>
+        <a href="#coordonnees">Coordonnées</a>
+    </nav>
+    
+    <section id="presentation" class="section-background">
+        <h2>Présentation</h2>
+        
+        <div class="presentation-container">
+            <div class="presentation-text">
+                <p>
+                    Salut ! 
+                    Moi c'est Dehay Maxime, je suis étudiant en 2ème année de BTS SIO (Services aux Organisations) option SLAM (Solutions Logicielles et Applications Métier) qui est une option spécialisée pour le développement au Lycée Léonard De Vinci.
+                </p>
+                <p>Je prévois de continuer mon cursus scolaire en poursuivant vers une licence professionelle en alternance.</p>
+                <p><h1>Mon CV</h1>
+                    <p>Tu peux télécharger mon CV en cliquant sur le bouton ci-dessous :</p>
+                    <button onclick="downloadCV()">Télécharger le CV</button></p>
+            </div>
+            <div class="presentation-image">
+                <img src="image/HTML.png" alt="Code image">
+                <img src="image/Javascript.png" alt="Code image">            
+            </div>
+        </div>
+        <h1>À Propos de moi !</h1>
+        <!-- Timeline -->
+        <div class="timeline" class="section-background">
+            <div class="timeline-item" >
+                <div class="animated-bg" class="timeline-item-content" >
+                    <h3>De 2014 - 2018 : Collège</h3>
+                    <p>Obtention du brevet avec mention assez bien</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="animated-bg" class="timeline-item-content">
+                    <h3>De 2019 -  2022: Lycée François Couperin</h3>
+                    <p>Obtention du bac avec options Mathématiques et SVT</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="animated-bg" class="timeline-item-content">
+                    <h3>De 2022 - 2023: Année sabatique</h3>
+                    <p>Année sabatique, j'ai profité de ce temps disponible pour faire de l'intérim et acquérir de l'expérience dans le monde professionnel.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="animated-bg" class="timeline-item-content">
+                    <h3>De 2023 - Présent : Etudiant en BTS SIO</h3>
+                    <p>Actuellement élève de BTS SIO option SLAM au Lycée Léonard de Vinci à Melun </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="stage" class="section-background">
+        <h2>Projets</h2>
+        <div class="container">
+            <div class="bloc" onclick="openOverlay('GeoWorld', 'Le moteur de recherche le plus populaire.', 'https://github.com/AyMax77/GeoWorld')">GeoWorld</div>
+            <div class="bloc" onclick="openOverlay('API_Serie', 'Plateforme pour héberger et gérer du code.', 'https://github.com/AyMax77/ApiSerie')">API_Serie</div>
+            <div class="bloc" onclick="openOverlay('Sushi_API', 'Réseau social professionnel pour les carrières.', 'https://github.com/AyMax77/Sushi_API')">Sushi_API</div>
+            <div class="bloc" onclick="openOverlay('API_Eurocoasters', 'Le moteur de recherche le plus populaire.', 'https://github.com/AyMax77/API_Eurocoasters')">API_Eurocoasters</div>
+            <div class="bloc" onclick="openOverlay('Savon_API', 'Plateforme pour héberger et gérer du code.', 'https://github.com/AyMax77/Savon-API')">Savon_API</div>
+            <div class="bloc" onclick="openOverlay('Kotlin_Aventure', 'Réseau social professionnel pour les carrières.', 'https://github.com/AyMax77/Kotlin_Aventure')">Kotlin_Aventure</div>
+        </div>
+    
+        <!-- Overlay Noir -->
+        <div id="overlay" class="overlay"></div>
+    
+        <!-- Modale -->
+        <div id="myModal" class="modal">
+            <img src="image/CSS.png" alt="Code image">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <button class="btn-open" id="modal-link">Ouvrir</button>
+            <button class="btn-close" onclick="closeModal()">Fermer</button>
+        </div>
+    </section>
+    <section id="stage" class="section-background">
+        <h2>Stage</h2>
+        <div class="stage-container">
+            <div class="stage-left">
+                <p>bOONJOOUR LKALALALALA Filezilla</p>
+                <img src="image/CSS.png" alt="Code image">
+                <img src="image/HTML.png" alt="Code image">
+                <img src="image/CSS.png" alt="Code image">
+
+
+            </div>
+           <div class="stage-right">
+            <p>E VFJHSEVBF JHXBG</p>
+            <img src="image/HTML.png" alt="Code image">
+            <img src="image/CSS.png" alt="Code image">
+            <img src="image/HTML.png" alt="Code image">
+
+            </div>
+        </div>
+</section>
+
+<section id="competences" class="section-background">
+    <h2>Compétences</h2>
+    <div class="competences-container">
+        <div class="competence"><img src="image/HTML.png" alt="Code image"></div>
+        <div class="competence"><img src="image/CSS.png" alt="Code image"></div>
+        <div class="competence"><img src="image/PHP.png" alt="Code image"></div>
+        <div class="competence"><img src="image/Python.png" alt="Code image"></div>
+        <div class="competence"><img src="image/Javascript.png" alt="Code image"></div>
+        <div class="competence"><img src="image/MySQL.png" alt="Code image"></div>
+        <div class="competence"><img src="image/angular.png" alt="Code image"></div>
+        <div class="competence"><img src="image/Bootstrap.png" alt="Code image"></div>
+        <div class="competence"><img src="image/KOTLIN.webp" alt="Code image"></div>
+        <div class="competence"><img src="image/spring-boot.png" alt="Code image"></div>
+        
+    </div>
+</section>
+
+    <section id="Veille" class="section-background">
+        <h2>Veille technologique</h2>
+    </section>
+
+    <section id="coordonnees" class="section-background">
+        <h2>Mes Coordonnées</h2>
+        <p>Adresse : 37 Boulevard de la République</p>
+        <p>77420 Champs-Sur-Marne</p>
+        <p>Email: <a href="dehay.maxime77lvd@gmail.com">dehay.maxime77lvd@gmail.com</a></p>
+        <p>Téléphone: +33 7 83 95 84 09</p>
+        <p></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon Portfolio</p>
+    </footer>
+
+    <script src="animations.js"></script>
+</body>
+</html>

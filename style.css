@@ -1,0 +1,356 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #007cf0, #00dfd8, #ff7300, #6a0dad);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #333;
+}
+.section-background {
+    background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    position: relative;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Animation du dégradé */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.animated-bg {
+    background: linear-gradient(45deg, #007cf0, #00dfd8, #ff7300, #6a0dad);
+    background-size: 400% 400%;
+    animation: colorShift 8s ease infinite;
+    position: relative;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Animation fluide du dégradé */
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
+    background-color: #444;
+    padding: 15px 0; /* Augmente la taille du padding pour une navbar plus grande */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px; /* Augmente le padding pour plus d'espace autour du texte */
+    margin: 5px;
+    font-size: 25px; /* Agrandit la taille de la police */
+    display: inline-block;
+    transition: background-color 0.3s; /* Ajoute une transition pour l'effet de survol */
+    
+}
+nav a:hover {
+    background-color: #555;
+    
+}
+section {
+    margin: 80px 20px;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);   
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+    color: #333;
+    justify-content: center;
+    text-align: center;
+
+}
+h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 70px;
+    font-weight: bold; /* Texte en gras */
+    background: white; /* Dégradé plus foncé */
+    -webkit-background-clip: text; /* Applique le dégradé au texte */
+    background-clip: text;
+    color: transparent; /* Cache la couleur de base pour afficher le dégradé */
+}
+
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    margin: 5px 0;
+    
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #444;
+}
+.presentation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.presentation-text {
+    flex: 1;
+    text-align: center;
+    font-size: 25px;
+}
+.presentation-image {
+    flex: 1;
+    text-align: center;
+}
+.presentation-image img {
+    width: 80%;  /* Tu peux ajuster la taille de l'image ici */
+    max-width: 500px;
+}
+.timeline {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            width: 60%; /* Ajuste la largeur de la timeline */
+            text-align: center; /* Centre le texte */
+            background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item:not(:last-child)::after {
+            content: '↓'; /* Flèche vers le bas */
+            position: absolute;
+            bottom: -25px; /* Distance entre l'élément et la flèche */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: #333;
+        }
+
+        .timeline-item-content {
+            margin-left: 40px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.bloc {
+    background: linear-gradient(45deg, #003366, #005f5f);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.bloc:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay noir semi-transparent */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(-50px); /* Départ légèrement en haut */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    opacity: 0; /* Départ invisible */
+    transition: all 0.4s ease-out; /* Animation fluide */
+}
+
+.modal h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.modal p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Conteneur pour l'image */
+.modal-image-container {
+    max-width: 100%;  /* Empêche l'image de dépasser la largeur du bloc */
+    max-height: 200px; /* Limite la hauteur pour éviter qu'elle prenne trop de place */
+    overflow: hidden;  /* Empêche les débordements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Image responsive */
+.modal img {
+    max-width: 100%;  /* Image ne dépasse jamais la largeur du bloc */
+    height: auto;  /* Garde les proportions */
+    border-radius: 5px; /* Coins arrondis pour un effet plus propre */
+}
+
+.modal button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-close {
+    background: #d9534f;
+    color: white;
+}
+
+.btn-open {
+    background: #005f5f;
+    color: white;
+}
+.stage-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacement entre les colonnes */
+}
+
+.stage-left, .stage-right {
+    flex: 1; /* Les deux colonnes prennent un espace égal */
+    text-align: center; /* Centrer le texte et les images */
+}
+
+.stage-left img, .stage-right img {
+    max-width: 100%; /* Les images ne dépassent pas leur conteneur */
+    height: auto; /* Maintient les proportions */
+    width: 250px; /* Taille fixe pour uniformiser */
+    border-radius: 8px; /* Coins arrondis pour un effet pro */
+    margin: 10px 0; /* Espacement entre les images */
+    object-fit: cover; /* S'assure que l'image est bien cadrée */
+}
+
+@media (max-width: 768px) {
+    .stage-container {
+        flex-direction: column; /* Passe en colonne sur mobile */
+        align-items: center; /* Centre les éléments */
+    }
+
+    .stage-left img, .stage-right img {
+        width: 200px; /* Réduit la taille sur mobile */
+    }
+}
+.competences-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste automatiquement les colonnes */
+    gap: 70px; /* Espacement entre les blocs */
+    justify-content: center; /* Centre les éléments */
+    max-width: 800px; /* Largeur max pour éviter que ça s'étale trop */
+    margin: auto; /* Centre la section */
+    text-align: center; /* Centre le texte */
+}
+
+.competence {
+    background: transparent; /* Supprime le fond */
+    padding: 0; /* Supprime l'espacement */
+    border-radius: 0; /* Pas de bord arrondi */
+    box-shadow: none; /* Supprime l'ombre */
+    min-width: 100px; /* Largeur minimale */
+}
+
+.competence img {
+    width: 210px; /* Taille uniforme de l'image */
+    height: auto; /* Garde les proportions */
+    display: block;
+    margin: 0 auto; /* Centre l'image */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+@media (max-width: 900px) {
+    .competences-container {
+        grid-template-columns: repeat(2, minmax(150px, 1fr)); /* 2 colonnes sur tablette */
+    }
+}
+
+@media (max-width: 480px) {
+    .competences-container {
+        grid-template-columns: repeat(1, minmax(150px, 1fr)); /* 1 colonne sur mobile */
+    }
+}
