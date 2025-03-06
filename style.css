@@ -210,6 +210,24 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+.bloc2 {
+    background: linear-gradient(135deg, #FF7F50, #8A2BE2); /* Couleurs différentes */
+    color: #fff8dc; /* Couleur du texte différente */
+    padding: 25px;
+    border-radius: 15px; /* Bordures plus arrondies */
+    font-size: 22px; /* Police plus grande */
+    font-weight: normal; /* Poids de la police normal */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.4s, background 0.5s;
+}
+
+.bloc2:hover {
+    transform: scale(1.1); /* L'effet d'agrandissement est plus fort */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Ombre plus prononcée */
+    background: linear-gradient(135deg, #8A2BE2, #FF7F50); /* Inversion des couleurs de fond */
+}
+
 
 /* Overlay noir semi-transparent */
 .overlay {
@@ -305,6 +323,17 @@ footer {
     border-radius: 8px; /* Coins arrondis pour un effet pro */
     margin: 10px 0; /* Espacement entre les images */
     object-fit: cover; /* S'assure que l'image est bien cadrée */
+}
+.stage-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    animation: slideIn 5s ease-in-out infinite; /* Animation de défilement */
 }
 
 @media (max-width: 768px) {

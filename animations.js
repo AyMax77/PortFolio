@@ -1,8 +1,8 @@
 function downloadCV() {
     // Crée un lien pour télécharger le CV
     var link = document.createElement('a');
-    link.href = ''; // Remplace par le chemin réel de ton CV
-    link.download = 'CV_Dehay_Maxime.pdf';
+    link.href = '/image/CV.pdf'; // Remplace par le chemin réel de ton CV
+    link.download = 'CV';
     link.click();
 }
 function openOverlay(title, description, link) {
