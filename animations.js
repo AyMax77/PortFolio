@@ -1,6 +1,6 @@
 function openCV() {
     // Ouvre le CV dans une nouvelle fenêtre ou un nouvel onglet
-    window.open('/image/CV.pdf', '_blank');
+    window.open('https://aymax77.github.io/PortFolio/image/CV.pdf', '_blank');
 }
 function openOverlay(title, description, link) {
     let overlay = document.getElementById('overlay');
