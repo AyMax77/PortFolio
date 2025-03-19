@@ -98,5 +98,5 @@ function animateTimeline() {
 }
 
 // Écouter l'événement de scroll pour la timeline
-window.addEventListener('scrol', animateTimeline);
+window.addEventListener('scroll', animateTimeline);
 

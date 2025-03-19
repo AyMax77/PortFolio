@@ -13,7 +13,7 @@ function openOverlay(title, description, link) {
         'Sushi_API': 'image/Sushi_API.avif',       // Remplace par le chemin réel de ton image
         'API_Eurocoasters': 'image/eurocoasters.jpg',// Remplace par le chemin réel de ton image
         'Savon_API': 'image/savon.jpg',       // Remplace par le chemin réel de ton image
-        'Kotlin_Aventure': 'image/Bootstra.png'  // Remplace par le chemin réel de ton image
+        'Kotlin_Aventure': 'image/Bootstrap.png'  // Remplace par le chemin réel de ton image
     };
 
     // Affiche l'overlay noir

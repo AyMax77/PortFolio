@@ -501,6 +501,7 @@ footer {
 .veille-content h3 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: #00dfd8;
     animation: colorChange 3s infinite alternate;
 }
 
