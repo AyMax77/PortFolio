@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -24,10 +25,10 @@
                     Salut ! 
                     Moi c'est Dehay Maxime, je suis étudiant en 2ème année de BTS SIO (Services aux Organisations) option SLAM (Solutions Logicielles et Applications Métier) qui est une option spécialisée pour le développement au Lycée Léonard De Vinci.
                 </p>
-                <p>Je prévois de continuer mon cursus scolaire en poursuivant vers une licence professionelle en alternance.</p>
+                <p>Je prévois de continuer mon cursus scolaire en poursuivant vers un bachelor professionel en alternance.</p>
                 <p><h1>Mon CV</h1>
-                    <p>Tu peux télécharger mon CV en cliquant sur le bouton ci-dessous :</p>
-                    <button onclick="downloadCV()">Télécharger le CV</button></p>
+                    <p>Vous pouvez ouvrir mon CV en cliquant sur le bouton ci-dessous :</p>
+                    <button onclick="openCV()">Voir le CV</button></p>
             </div>
             <div class="presentation-image">
                 <img src="image/HTML.png" alt="Code image">
@@ -59,6 +60,12 @@
                 <div class="animated-bg" class="timeline-item-content">
                     <h3>De 2023 - Présent : Etudiant en BTS SIO</h3>
                     <p>Actuellement élève de BTS SIO option SLAM au Lycée Léonard de Vinci à Melun </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="animated-bg" class="timeline-item-content">
+                    <h3>De 2025 -2026  : Etudiant en bachelor 3eme année</h3>
+                    <p>Je serais un étudiant en bachelor 3 en développement web en alternance</p>
                 </div>
             </div>
         </div>
@@ -96,7 +103,9 @@
                 <h3>Première année</h3>
                 <p>Durant cette première je fus stagiaire dans l'entreprise Byshopia qui est une entreprise qui vendait des mods pour des jeux vidéos.
                 </p>
-                <p>En effet, il m'a été confié comme tâches </p>
+                <p>En effet, il m'a été confié comme tâches de créer des pages en php depuis une navbar et de gérer le maintien de fonctionnement du site</p>
+                <p>J'ai également été en charge de réaliser des tokens et des tickets pour d'éventuels soucis au niveau du site internet</p>
+                <p>De plus, la tâche que j'ai le plus réaliser c'est la mise en forme du CSS du site pour toujours une clarté au niveau de l'affichage</p>
                 
 
                 </div>
@@ -133,23 +142,159 @@
     </div>
 </section>
 
-    <section id="Veille" class="section-background">
-        <h2>Veille technologique</h2>
-    </section>
+<section id="Veille" class="veille-section">
+    <div class="veille-container">
+        <h2>Veille Technologique : Simulations et Simulateurs en Formule 1</h2>
 
-    <section id="coordonnees" class="section-background">
-        <h2>Mes Coordonnées</h2>
-        <p>Adresse : 37 Boulevard de la République</p>
-        <p>77420 Champs-Sur-Marne</p>
-        <p>Email: <a href="dehay.maxime77lvd@gmail.com">dehay.maxime77lvd@gmail.com</a></p>
-        <p>Téléphone: +33 7 83 95 84 09</p>
-        <p></p>
-    </section>
+        <div class="veille-content">
+            <!-- Introduction -->
+            <div class="veille-intro">
+                <h3>1. Introduction</h3>
+                <p>
+                    Les simulations et les simulateurs jouent un rôle central en Formule 1. Ils permettent aux écuries de tester et d'optimiser les performances des voitures et des pilotes dans un environnement virtuel avant de passer à la piste. Ces outils sont essentiels pour réduire les coûts, minimiser les risques et maximiser les performances. Grâce à des technologies de pointe comme l'IA, le Machine Learning et les supercalculateurs, les écuries peuvent simuler des milliers de scénarios en quelques secondes.
+                </p>
+            </div>
+
+            <!-- Types de Simulateurs en Formule 1 -->
+            <div class="veille-simulateurs">
+                <h3 id="Simulateurs">2. Types de Simulateurs en Formule 1</h3>
+                <div class="simulateur-cards">
+                    <div class="simulateur-card">
+                        <h4>Simulateurs de Pilotage</h4>
+                        <p>
+                            Les simulateurs de pilotage permettent aux pilotes de s'entraîner sur des circuits virtuels. Ils reproduisent fidèlement les conditions de course, y compris les comportements de la voiture, les conditions météo et les interactions avec les autres pilotes. Ces simulateurs sont essentiels pour préparer les pilotes aux courses réelles.
+                        </p>
+                    </div>
+                    <div class="simulateur-card">
+                        <h4>Simulateurs Aérodynamiques (CFD)</h4>
+                        <p>
+                            Les simulateurs aérodynamiques, basés sur la dynamique des fluides numérique (CFD), permettent de simuler les flux d'air autour de la voiture. Ces simulations aident les ingénieurs à optimiser l'aérodynamisme de la voiture, ce qui est crucial pour améliorer la performance et réduire la traînée.
+                        </p>
+                    </div>
+                    <div class="simulateur-card">
+                        <h4>Simulateurs de Pneus</h4>
+                        <p>
+                            Les simulateurs de pneus prévoient l'usure et les performances des pneus en fonction des conditions de piste et des stratégies de course. Ces outils aident les écuries à choisir les meilleurs pneus et à adapter leurs stratégies en temps réel.
+                        </p>
+                    </div>
+                    <div class="simulateur-card">
+                        <h4>Simulateurs de Stratégie</h4>
+                        <p>
+                            Les simulateurs de stratégie permettent aux écuries de tester différentes stratégies de course, comme les arrêts aux stands et les choix de pneus. Ces simulations prennent en compte les conditions météo, les performances des concurrents et les règles de la course.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Utilisées dans les Simulateurs -->
+            <div class="veille-technologies">
+                <h3 id="Technologies">3. Technologies Utilisées dans les Simulateurs</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h4>Python</h4>
+                        <p>Python est largement utilisé pour l'analyse de données, la télémétrie et l'intelligence artificielle. C'est un langage polyvalent et facile à apprendre.</p>
+                        <a href="https://www.python.org/" target="_blank" class="tech-link">En savoir plus sur Python</a>
+                    </div>
+                    <div class="tech-card">
+                        <h4>C++</h4>
+                        <p>C++ est utilisé pour les simulations en temps réel en raison de sa performance et de sa gestion fine de la mémoire. Il est souvent utilisé dans les moteurs de simulation.</p>
+                        <a href="https://isocpp.org/" target="_blank" class="tech-link">En savoir plus sur C++</a>
+                    </div>
+                    <div class="tech-card">
+                        <h4>MATLAB</h4>
+                        <p>MATLAB est utilisé pour la modélisation avancée et l'analyse numérique. Il est particulièrement utile pour les simulations mathématiques complexes.</p>
+                        <a href="https://www.mathworks.com/products/matlab.html" target="_blank" class="tech-link">En savoir plus sur MATLAB</a>
+                    </div>
+                    <div class="tech-card">
+                        <h4>OpenFOAM</h4>
+                        <p>OpenFOAM est un outil open source pour les simulations aérodynamiques (CFD). Il est largement utilisé en Formule 1 pour optimiser l'aérodynamisme des voitures.</p>
+                        <a href="https://openfoam.org/" target="_blank" class="tech-link">En savoir plus sur OpenFOAM</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact des Simulateurs sur la Performance -->
+            <div class="veille-impact">
+                <h3>4. Impact des Simulateurs sur la Performance</h3>
+                <p>
+                    Les simulateurs ont un impact significatif sur la performance des écuries de Formule 1. Voici quelques exemples concrets :
+                </p>
+                <ul>
+                    <li><strong>Réduction des coûts</strong> : Les simulations permettent de tester des configurations sans avoir à construire des prototypes physiques, ce qui réduit les coûts de développement.</li>
+                    <li><strong>Optimisation des stratégies</strong> : Les simulateurs de stratégie aident les écuries à prendre des décisions en temps réel pendant les courses, comme les arrêts aux stands et les choix de pneus.</li>
+                    <li><strong>Amélioration des performances des pilotes</strong> : Les simulateurs de pilotage permettent aux pilotes de s'entraîner dans des conditions réalistes, ce qui améliore leur réactivité et leur précision sur la piste.</li>
+                </ul>
+            </div>
+
+            <!-- Défis et Innovations Futures -->
+            <div class="veille-defis">
+                <h3>5. Défis et Innovations Futures</h3>
+                <p>
+                    Les simulateurs en Formule 1 évoluent rapidement grâce à des technologies émergentes :
+                </p>
+                <ul>
+                    <li><strong>Réalité Virtuelle (VR)</strong> : Pour des simulations de pilotage encore plus immersives, permettant aux pilotes de se sentir comme sur une vraie piste.</li>
+                    <li><strong>Intelligence Artificielle (IA)</strong> : Pour optimiser les simulations et les stratégies de course en analysant des millions de points de données en temps réel.</li>
+                    <li><strong>Réalité Augmentée (AR)</strong> : Pour superposer des données en temps réel pendant les simulations, aidant les ingénieurs à prendre des décisions plus éclairées.</li>
+                </ul>
+            </div>
+
+            <!-- Ressources -->
+            <div class="veille-ressources">
+                <h3 id="Ressources">📌 Ressources</h3>
+                <div class="ressources-links">
+                    <a href="https://aws.amazon.com/f1/" target="_blank" class="ressource-link">AWS & F1 Insights</a>
+                    <a href="https://openfoam.org/" target="_blank" class="ressource-link">OpenFOAM (CFD Open-Source)</a>
+                    <a href="https://theoehrly.github.io/Fast-F1/" target="_blank" class="ressource-link">FastF1 (Analyse de télémétrie en Python)</a>
+                    <a href="https://www.oracle.com/red-bull-racing/" target="_blank" class="ressource-link">Oracle & Red Bull Racing</a>
+                    <a href="https://www.f1technical.net/" target="_blank" class="ressource-link">F1 Technical</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="coordonnees" class="section-background">
+    <h2>Mes Coordonnées</h2>
+    <div class="coordonnees-container">
+        <!-- Adresse -->
+        <div class="coordonnee-item">
+            <i class="fas fa-map-marker-alt"></i> <!-- Icône d'adresse -->
+            <p>Adresse: <a href="https://www.google.fr/maps/place/37+Bd+de+la+R%C3%A9publique,+77420+Champs-sur-Marne/@48.8553146,2.5812508,16z/data=!3m1!4b1!4m6!3m5!1s0x47e611d72765c1ed:0xbabff3cb8502a085!8m2!3d48.8553111!4d2.5838257!16s%2Fg%2F11c4x_1gpx?entry=ttu&g_ep=EgoyMDI1MDMxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">37 Boulevard de la République, 77420 Champs-Sur-Marne</a></p>
+        </div>
+
+        <!-- Email -->
+        <div class="coordonnee-item">
+            <i class="fas fa-envelope"></i> <!-- Icône d'email -->
+            <p>Email: <a href="mailto:dehay.maxime77lvd@gmail.com" target="_blank">dehay.maxime77lvd@gmail.com</a></p>
+        </div>
+
+        <!-- Téléphone -->
+        <div class="coordonnee-item">
+            <i class="fas fa-phone"></i> <!-- Icône de téléphone -->
+            <p>Téléphone: <a href="tel:+33783958409">+33 7 83 95 84 09</a></p>
+        </div>
+
+        <!-- GitHub -->
+        <div class="coordonnee-item">
+            <i class="fab fa-github"></i> <!-- Icône GitHub -->
+            <p>GitHub: <a href="https://github.com/AyMax77" target="_blank">AyMax77</a></p>
+        </div>
+
+        <!-- Indeed -->
+        <div class="coordonnee-item">
+            <img src="image/Logo-Indeed.png" alt="Indeed Logo" class="icon-image"> <!-- Icône Indeed personnalisée -->
+            <p>Indeed: <a href="https://profile.indeed.com/?hl=fr_FR&co=FR&from=gnav-homepage" target="_blank">Mon Profil Indeed</a></p>
+        </div>
+    </div>
+</section>
 
     <footer>
         <p>&copy; 2025 Mon Portfolio</p>
     </footer>
 
     <script src="animations.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
