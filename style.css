@@ -2474,15 +2474,15 @@ textarea:focus {
     background-image: url('image/series.jpg');
 }
 
-.bloc-Sushi_API::before {
-    background-image: url('image/Sushi_API.avif');
+.bloc-Savon_FrontEnd::before {
+    background-image: url('image/savon.jpg');
 }
 
 .bloc-API_Eurocoasters::before {
     background-image: url('image/eurocoasters.jpg');
 }
 
-.bloc-Savon_API::before {
+.bloc-Savon_BackEnd::before {
     background-image: url('image/savon.jpg');
 }
 

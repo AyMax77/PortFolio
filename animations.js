@@ -132,9 +132,9 @@ function openOverlay(title, description, link) {
     var images = {
         'GeoWorld': 'image/Geoworld.avif',
         'API_Serie': 'image/series.jpg',
-        'Sushi_API': 'image/savon.jpg',
+        'Savon_FrontEnd': 'image/savon.jpg',
         'API_Eurocoasters': 'image/eurocoasters.jpg',
-        'Savon_API': 'image/savon.jpg',
+        'Savon_BackEnd': 'image/savon.jpg',
         'Kotlin_Aventure': 'image/KOTLIN.webp'
     };
 
@@ -276,7 +276,7 @@ function openOverlay(title, description, link) {
             src: 'image/series.jpg',
             alt: 'Application de séries TV avec interface moderne'
         },
-        'Sushi_API': {
+        'Savon_FrontEnd': {
             src: 'image/savon.jpg',
             alt: 'Interface de commande de sushi en ligne'
         },
@@ -284,7 +284,7 @@ function openOverlay(title, description, link) {
             src: 'image/eurocoasters.jpg',
             alt: 'Application pour explorer les montagnes russes en Europe'
         },
-        'Savon_API': {
+        'Savon_BackEnd': {
             src: 'image/savon.jpg',
             alt: 'Calculateur de recettes de savon artisanal'
         },
