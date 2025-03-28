@@ -2517,8 +2517,8 @@ textarea:focus {
 }
 
 .modal .btn-open {
-    background: linear-gradient(45deg, #003366, #005f5f);
-    color: white;
+  background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
+  color: white;
     padding: 12px 25px;
     font-size: 18px;
     border-radius: 8px;
