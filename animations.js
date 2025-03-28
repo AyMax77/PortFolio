@@ -277,7 +277,7 @@ function openOverlay(title, description, link) {
             alt: 'Application de séries TV avec interface moderne'
         },
         'Sushi_API': {
-            src: 'image/Sushi_API.avif',
+            src: 'image/savon.jpg',
             alt: 'Interface de commande de sushi en ligne'
         },
         'API_Eurocoasters': {
