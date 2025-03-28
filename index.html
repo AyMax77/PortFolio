@@ -96,7 +96,7 @@
         <h3 id="modal-title"></h3>
         <p id="modal-description"></p>
         <div class="modal-buttons">
-            <button class="btn-open" id="modal-link">Voir le code</button>
+            <button class="btn-open" id="modal-link">Ouvrir</button>
             <button class="btn-close" onclick="closeModal()">Fermer</button>
         </div>
     </div>
@@ -155,9 +155,96 @@
             <!-- Introduction -->
             <div class="veille-intro">
                 <h3>1. Introduction</h3>
-                <p>
-                    Les simulations et les simulateurs jouent un rôle central en Formule 1. Ils permettent aux écuries de tester et d'optimiser les performances des voitures et des pilotes dans un environnement virtuel avant de passer à la piste. Ces outils sont essentiels pour réduire les coûts, minimiser les risques et maximiser les performances. Grâce à des technologies de pointe comme l'IA, le Machine Learning et les supercalculateurs, les écuries peuvent simuler des milliers de scénarios en quelques secondes.
-                </p>
+                <body>
+                    <h1>🚗 La Programmation des Simulateurs de Formule 1</h1>
+                    
+                    <div class="video-ref">
+                        Référence : <a href="https://www.youtube.com/watch?v=Kfp4pMAhsUs" target="_blank">Nouveau simulateur de la Scuderia Ferrari (98% de précision)</a>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>Introduction</h2>
+                        <p>Les simulateurs en Formule 1 sont des outils cruciaux qui permettent aux écuries de tester et optimiser les performances des voitures et des pilotes dans un environnement virtuel avant de passer à la piste. Grâce à des technologies de pointe comme l'IA et le Machine Learning, ces simulateurs atteignent une précision impressionnante (jusqu'à 98% selon Ferrari).</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>🧠 Le Cerveau Invisible du Simulateur</h2>
+                        <p>Un simulateur F1 fonctionne comme un jeu vidéo ultra-réaliste où tout est calculé pour reproduire fidèlement la physique réelle :</p>
+                        
+                        <div class="highlight">
+                            <p><span class="emoji">⚡</span> <strong>Calcul des réactions de la voiture</strong> : accélération, freinage, prise de virage</p>
+                            <p><span class="emoji">🏁</span> <strong>Reconstruction précise des circuits</strong> : bosses, virages, conditions météo</p>
+                            <p><span class="emoji">🤖</span> <strong>Comportement des adversaires</strong> : IA qui apprend à doubler et défendre</p>
+                            <p><span class="emoji">🎮</span> <strong>Retour haptique</strong> : vibrations du volant, sensations de dérapage</p>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>📊 Physique et Calculs Clés</h2>
+                        
+                        <h3>1. L'Accélération</h3>
+                        <p>La vitesse dépend de :</p>
+                        <ul>
+                            <li>Puissance du moteur (en chevaux)</li>
+                            <li>Poids de la voiture</li>
+                            <li>Rapport de boîte de vitesses</li>
+                        </ul>
+                        <p class="formula">Accélération = (Puissance × Efficacité) / (Poids + Résistance de l'air)</p>
+                        <p>Calculé 30 à 60 fois par seconde pour fluidité</p>
+                        
+                        <h3>2. La Prise de Virage</h3>
+                        <p>Facteurs calculés :</p>
+                        <ul>
+                            <li>Adhérence des pneus (usure, température)</li>
+                            <li>Aérodynamisme (appui des ailes)</li>
+                            <li>Force centrifuge</li>
+                        </ul>
+                        <div class="code">
+                if vitesse > limite_du_virage:
+                    voiture.dérape()
+                else:
+                    voiture.tient_la_route()
+                        </div>
+                        
+                        <h3>3. Le Freinage</h3>
+                        <p class="formula">Distance de freinage = (Vitesse²) / (2 × Force de freinage × Adhérence)</p>
+                        <p>Prend en compte : ABS, état de la piste, usure des freins</p>
+                        
+                        <h3>4. Dégâts et Usure</h3>
+                        <p>Calcul des impacts :</p>
+                        <ul>
+                            <li>Détection des parties endommagées (aile cassée, etc.)</li>
+                            <li>Usure progressive des pneus</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>💡 Pourquoi une telle Complexité ?</h2>
+                        <p>Une F1 est une machine de précision, et les simulateurs professionnels doivent être ultra-réalistes pour :</p>
+                        <ul>
+                            <li>L'entraînement des pilotes</li>
+                            <li>Le développement de la voiture</li>
+                            <li>La validation des réglages</li>
+                            <li>L'économie de coûts (moins d'essais réels)</li>
+                        </ul>
+                        
+                        <div class="highlight">
+                            <p><strong>Exemple concret</strong> : Dans F1 23, quand vous prenez un virage à 200 km/h, le simulateur vérifie en millisecondes :</p>
+                            <p>- Adhérence des pneus<br>- Appui aérodynamique<br>- Risque de dérapage</p>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>🎯 Conclusion</h2>
+                        <p>Le simulateur ne devine pas - il calcule tout comme en réalité grâce à :</p>
+                        <ul>
+                            <li>Des formules physiques précises</li>
+                            <li>Des algorithmes complexes</li>
+                            <li>Une puissance de calcul importante</li>
+                        </ul>
+                        <p>C'est cette programmation avancée qui fait la différence entre un simple jeu et un outil professionnel utilisé par les écuries de F1 !</p>
+                    </div>
+                </body>
             </div>
 
             <!-- Types de Simulateurs en Formule 1 -->

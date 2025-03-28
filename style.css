@@ -2539,3 +2539,41 @@ textarea:focus {
     backdrop-filter: blur(3px);
     transition: opacity 0.3s ease;
 }
+
+.highlight {
+  background-color: #fffde7;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #ffd600;
+  margin: 15px 0;
+}
+
+.formula {
+  font-family: monospace;
+  background-color: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.code {
+  font-family: 'Courier New', monospace;
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.emoji {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+.video-ref {
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  margin: 20px 0;
+}
