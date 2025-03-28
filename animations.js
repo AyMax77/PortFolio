@@ -132,7 +132,7 @@ function openOverlay(title, description, link) {
     var images = {
         'GeoWorld': 'image/Geoworld.avif',
         'API_Serie': 'image/series.jpg',
-        'Sushi_API': 'image/Sushi_API.avif',
+        'Sushi_API': 'image/savon.jpg',
         'API_Eurocoasters': 'image/eurocoasters.jpg',
         'Savon_API': 'image/savon.jpg',
         'Kotlin_Aventure': 'image/KOTLIN.webp'
