@@ -198,17 +198,19 @@ footer {
     max-width: 800px;
     margin: auto;
 }
-
 .bloc {
-    background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #003366, #005f5f);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 1;
 }
 
 .bloc:hover {
@@ -216,15 +218,18 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 .bloc2 {
-    background: linear-gradient(135deg, #FF7F50, #8A2BE2); /* Couleurs différentes */
-    color: #fff8dc; /* Couleur du texte différente */
-    padding: 25px;
-    border-radius: 15px; /* Bordures plus arrondies */
-    font-size: 22px; /* Police plus grande */
-    font-weight: normal; /* Poids de la police normal */
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.4s, background 0.5s;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 1;
 }
 
 .bloc2:hover {
@@ -2432,20 +2437,6 @@ textarea:focus {
 }
 
 /* Style amélioré pour les blocs de projets */
-.bloc, .bloc2 {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-    z-index: 1;
-}
 
 .bloc::before, .bloc2::before {
     content: '';
