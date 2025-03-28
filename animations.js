@@ -278,7 +278,7 @@ function openOverlay(title, description, link) {
         },
         'Savon_FrontEnd': {
             src: 'image/savon.jpg',
-            alt: 'Interface de commande de sushi en ligne'
+            alt: 'Calculateur de recettes de savon artisanal'
         },
         'API_Eurocoasters': {
             src: 'image/eurocoasters.jpg',
