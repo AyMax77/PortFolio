@@ -2564,6 +2564,7 @@ textarea:focus {
   padding: 10px;
   border-radius: 4px;
   overflow-x: auto;
+  text-align: center;
 }
 
 .emoji {
