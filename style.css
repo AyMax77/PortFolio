@@ -600,33 +600,64 @@ img img {
     width: 100%;
 }
 /* Section Coordonnées */
+/* Animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Section Coordonnées */
 .coordonnees-section {
-  background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d) !important;
-  background-size: 95% 95%;
-  animation: gradientAnimation 15s ease infinite;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  margin: 20px auto;
-  backdrop-filter: blur(5px);
+background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
+background-size: 400% 400%;
+animation: gradientAnimation 15s ease infinite;
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+
+/* Nouveaux styles pour l'espacement */
+margin: 40px auto;
+width: 90%;
+max-width: 1200px;
+
+backdrop-filter: blur(5px);
+position: relative;
+overflow: hidden;
+}
+
+/* Option: ajouter un effet de bordure sophistiqué */
+.coordonnees-section::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+border-radius: 8px;
+padding: 2px;
+background: linear-gradient(45deg, 
+  rgba(255,255,255,0.3), 
+  rgba(255,255,255,0.1));
+-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+-webkit-mask-composite: xor;
+mask-composite: exclude;
+pointer-events: none;
 }
 
 .coordonnees-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 700px;
-  margin: 0 auto;
+/* Vos styles existants */
+max-width: 800px; /* Ajustez selon vos besoins */
 }
 
 .coordonnee-item {
   display: flex;
   align-items: center;
   padding: 15px 20px;
-  background: rgba(255, 255, 255, 0.15)!important;
+  background: rgb(0, 0, 0)!important;
   border-radius: 12px;
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1)!important;
+  border: 1px solid rgba(95, 84, 84, 0.332)!important;
   transition: all 0.3s ease;
 }
 
