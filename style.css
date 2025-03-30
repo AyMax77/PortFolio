@@ -520,7 +520,7 @@ footer {
 }
 
 img img {
-  width: 300px;
+  width: 150px;
   height: auto;
 }
 /* Ou pour des tailles différentes */
@@ -528,7 +528,7 @@ img img {
   width: 500px;
 }
 .img-small {
-  width: 200px;
+  width: 250px;
 }
 
 .tech-grid, .simulation-cards {
