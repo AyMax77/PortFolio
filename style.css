@@ -602,7 +602,7 @@ img img {
 /* Section Coordonnées */
 .coordonnees-section {
   background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d) !important;
-  background-size: 300% 300%;
+  background-size: 95% 95%;
   animation: gradientAnimation 15s ease infinite;
   padding: 40px;
   border-radius: 8px;
@@ -615,7 +615,7 @@ img img {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
