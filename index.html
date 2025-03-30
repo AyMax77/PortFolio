@@ -164,161 +164,168 @@
                         <img src="image/simulateur.jpg" alt="Simulateur de Formule 1"class="img-large">
                         <img src="image/simulateur2.jpg" alt="Simulateur de Formule 1" class="img-large">
                     </div>
-                    <div class="container">
-                        <!-- Navigation par onglets -->
-                        <div class="nav-tabs">
-                            <div class="nav-tab active" onclick="openTab('fonctionnement')">Fonctionnement</div>
-                            <div class="nav-tab" onclick="openTab('types')">Types de Simulateurs</div>
-                            <div class="nav-tab" onclick="openTab('technologies')">Technologies</div>
-                            <div class="nav-tab" onclick="openTab('impact')">Impact</div>
-                            <div class="nav-tab" onclick="openTab('futur')">Innovations Futures</div>
-                            <div class="nav-tab" onclick="openTab('ressources')">Ressources</div>
-                        </div>
+                    <div class="section">
+                        <h2>Le Cerveau Invisible du Simulateur</h2>
+                        <p>Un simulateur F1 fonctionne comme un jeu vidéo ultra-réaliste où tout est calculé pour reproduire fidèlement la physique réelle :</p>
                         
-                        <!-- Contenu des onglets -->
-                        <div id="fonctionnement" class="tab-content active">
-                            <h2>Le Cerveau Invisible du Simulateur</h2>
-                            <p>Un simulateur F1 fonctionne comme un jeu vidéo ultra-réaliste où tout est calculé pour reproduire fidèlement la physique réelle :</p>
-                            
-                            <div class="card-container">
-                                <div class="card">
-                                    <p><span class="emoji">⚡</span> <strong>Calcul des réactions de la voiture</strong> : accélération, freinage, prise de virage</p>
-                                </div>
-                                <div class="card">
-                                    <p><span class="emoji">🏁</span> <strong>Reconstruction précise des circuits</strong> : bosses, virages, conditions météo</p>
-                                </div>
-                                <div class="card">
-                                    <p><span class="emoji">🤖</span> <strong>Comportement des adversaires</strong> : IA qui apprend à doubler et défendre</p>
-                                </div>
-                                <div class="card">
-                                    <p><span class="emoji">🎮</span> <strong>Retour haptique</strong> : vibrations du volant, sensations de dérapage</p>
-                                </div>
-                            </div>
-                            
-                            <h3>Physique et Calculs Clés</h3>
-                            <div class="card-container">
-                                <div class="card">
-                                    <h4>L'Accélération</h4>
-                                    <p class="code">Accélération = (Puissance × Efficacité) / (Poids + Résistance de l'air)</p>
-                                </div>
-                                <div class="card">
-                                    <h4>La Prise de Virage</h4>
-                                    <div class="code">
-                                        if vitesse > limite_du_virage:<br>
-                                        &nbsp;&nbsp;voiture.dérape()<br>
-                                        else:<br>
-                                        &nbsp;&nbsp;voiture.tient_la_route()
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <h4>Le Freinage</h4>
-                                    <p class="code">Distance de freinage = (Vitesse²) / (2 × Force de freinage × Adhérence)</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div id="types" class="tab-content">
-                            <h2>Types de Simulateurs en Formule 1</h2>
-                            <div class="card-container">
-                                <div class="card">
-                                    <h4>Simulateurs de Pilotage</h4>
-                                    <p>Reproduisent fidèlement les conditions de course pour l'entraînement des pilotes.</p>
-                                </div>
-                                <div class="card">
-                                    <h4>Simulateurs Aérodynamiques (CFD)</h4>
-                                    <p>Simulent les flux d'air pour optimiser l'aérodynamisme de la voiture.</p>
-                                </div>
-                                <div class="card">
-                                    <h4>Simulateurs de Pneus</h4>
-                                    <p>Prévoient l'usure et les performances des pneus selon les conditions.</p>
-                                </div>
-                                <div class="card">
-                                    <h4>Simulateurs de Stratégie</h4>
-                                    <p>Testent différentes stratégies de course (arrêts aux stands, choix de pneus).</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div id="technologies" class="tab-content">
-                            <h2>Technologies Utilisées</h2>
-                            <div class="card-container">
-                                <div class="card">
-                                    <h4>Python</h4>
-                                    <p>Analyse de données, télémétrie et intelligence artificielle.</p>
-                                    <a href="https://www.python.org/" target="_blank" class="tech-link">En savoir plus</a>
-                                </div>
-                                <div class="card">
-                                    <h4>C++</h4>
-                                    <p>Simulations en temps réel grâce à sa performance.</p>
-                                    <a href="https://isocpp.org/" target="_blank" class="tech-link">En savoir plus</a>
-                                </div>
-                                <div class="card">
-                                    <h4>MATLAB</h4>
-                                    <p>Modélisation avancée et analyse numérique.</p>
-                                    <a href="https://www.mathworks.com/" target="_blank" class="tech-link">En savoir plus</a>
-                                </div>
-                                <div class="card">
-                                    <h4>OpenFOAM</h4>
-                                    <p>Simulations aérodynamiques (CFD) open source.</p>
-                                    <a href="https://openfoam.org/" target="_blank" class="tech-link">En savoir plus</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div id="impact" class="tab-content">
-                            <h2>Impact sur la Performance</h2>
-                            <div class="card-container">
-                                <div class="card">
-                                    <h4>Réduction des coûts</h4>
-                                    <p>Moins de prototypes physiques nécessaires grâce aux simulations.</p>
-                                </div>
-                                <div class="card">
-                                    <h4>Optimisation des stratégies</h4>
-                                    <p>Décisions en temps réel pendant les courses.</p>
-                                </div>
-                                <div class="card">
-                                    <h4>Amélioration des pilotes</h4>
-                                    <p>Entraînement dans des conditions ultra-réalistes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div id="futur" class="tab-content">
-                            <h2>Innovations Futures</h2>
-                            <div class="card-container">
-                                <div class="card">
-                                    <h4>Réalité Virtuelle (VR)</h4>
-                                    <p>Immersion totale pour les pilotes.</p>
-                                </div>
-                                <div class="card">
-                                    <h4>Intelligence Artificielle (IA)</h4>
-                                    <p>Analyse de millions de points de données en temps réel.</p>
-                                </div>
-                                <div class="card">
-                                    <h4>Réalité Augmentée (AR)</h4>
-                                    <p>Superposition de données pendant les simulations.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div id="ressources" class="tab-content">
-                            <h2>Ressources</h2>
-                            <div class="card-container">
-                                <div class="card">
-                                    <a href="https://aws.amazon.com/f1/" target="_blank" class="ressource-link">AWS & F1 Insights</a>
-                                </div>
-                                <div class="card">
-                                    <a href="https://openfoam.org/" target="_blank" class="ressource-link">OpenFOAM</a>
-                                </div>
-                                <div class="card">
-                                    <a href="https://theoehrly.github.io/Fast-F1/" target="_blank" class="ressource-link">FastF1 (Python)</a>
-                                </div>
-                                <div class="card">
-                                    <a href="https://www.youtube.com/watch?v=Kfp4pMAhsUs" target="_blank" class="ressource-link">Simulateur Mercedes</a>
-                                </div>
-                            </div>
+                        <div class="section">
+                            <p><span class="emoji">⚡</span> <strong>Calcul des réactions de la voiture</strong> : accélération, freinage, prise de virage</p>
+                            <p><span class="emoji">🏁</span> <strong>Reconstruction précise des circuits</strong> : bosses, virages, conditions météo</p>
+                            <p><span class="emoji">🤖</span> <strong>Comportement des adversaires</strong> : IA qui apprend à doubler et défendre</p>
+                            <p><span class="emoji">🎮</span> <strong>Retour haptique</strong> : vibrations du volant, sensations de dérapage</p>
                         </div>
                     </div>
+                    
+                    <div class="section">
+                        <h2>Physique et Calculs Clés</h2>
+                        
+                        <h3>1. L'Accélération</h3>
+                        <p>La vitesse dépend de :</p>
+                        <ul>
+                            <li>Puissance du moteur (en chevaux)</li>
+                            <li>Poids de la voiture</li>
+                            <li>Rapport de boîte de vitesses</li>
+                        </ul>
+                        <p class="code">Accélération = (Puissance × Efficacité) / (Poids + Résistance de l'air)</p>
+                        <p>Calculé 30 à 60 fois par seconde pour fluidité</p>
+                        
+                        <h3>2. La Prise de Virage</h3>
+                        <p>Facteurs calculés :</p>
+                        <ul>
+                            <li>Adhérence des pneus (usure, température)</li>
+                            <li>Aérodynamisme (appui des ailes)</li>
+                            <li>Force centrifuge</li>
+                        </ul>
+                        <div class="code">
+                if vitesse > limite_du_virage:
+                    voiture.dérape()
+                else:
+                    voiture.tient_la_route()
+                        </div>
+                        
+                        <h3>3. Le Freinage</h3>
+                        <p class="code">Distance de freinage = (Vitesse²) / (2 × Force de freinage × Adhérence)</p>
+                        <p>Prend en compte : ABS, état de la piste, usure des freins</p>
+                        
+                        <h3>4. Dégâts et Usure</h3>
+                        <p>Calcul des impacts :</p>
+                        <ul>
+                            <li>Détection des parties endommagées (aile cassée, etc.)</li>
+                            <li>Usure progressive des pneus</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="section">
+                        <h2>Pourquoi une telle Complexité ?</h2>
+                        <p>Une F1 est une machine de précision, et les simulateurs professionnels doivent être ultra-réalistes pour :</p>
+                        <ul>
+                            <li>L'entraînement des pilotes</li>
+                            <li>Le développement de la voiture</li>
+                            <li>La validation des réglages</li>
+                            <li>L'économie de coûts (moins d'essais réels)</li>
+                        </ul>
+                        
+                        <div class="code">
+                            <p><strong>Exemple concret</strong> : Dans F1 23, quand vous prenez un virage à 200 km/h, le simulateur vérifie en millisecondes :</p>
+                            <p>- Adhérence des pneus<br>- Appui aérodynamique<br>- Risque de dérapage</p>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <p>Le simulateur ne devine pas - il calcule tout comme en réalité grâce à :</p>
+                        <ul>
+                            <li>Des formules physiques précises</li>
+                            <li>Des algorithmes complexes</li>
+                            <li>Une puissance de calcul importante</li>
+                        </ul>
+                        <p>C'est cette programmation avancée qui fait la différence entre un simple jeu et un outil professionnel utilisé par les écuries de F1 !</p>
+                    </div>
+                
+            
+
+            <!-- Types de Simulateurs en Formule 1 -->
+            <div class="veille-simulateurs">
+                <h3 id="Simulateurs">2. Types de Simulateurs en Formule 1</h3>
+                <div class="simulateur-cards">
+                    <div class="simulateur-card">
+                        <h4>Simulateurs de Pilotage</h4>
+                        <p>
+                            Les simulateurs de pilotage permettent aux pilotes de s'entraîner sur des circuits virtuels. Ils reproduisent fidèlement les conditions de course, y compris les comportements de la voiture, les conditions météo et les interactions avec les autres pilotes. Ces simulateurs sont essentiels pour préparer les pilotes aux courses réelles.
+                        </p>
+                    </div>
+                    <div class="simulateur-card">
+                        <h4>Simulateurs Aérodynamiques (CFD)</h4>
+                        <p>
+                            Les simulateurs aérodynamiques, basés sur la dynamique des fluides numérique (CFD), permettent de simuler les flux d'air autour de la voiture. Ces simulations aident les ingénieurs à optimiser l'aérodynamisme de la voiture, ce qui est crucial pour améliorer la performance et réduire la traînée.
+                        </p>
+                    </div>
+                    <div class="simulateur-card">
+                        <h4>Simulateurs de Pneus</h4>
+                        <p>
+                            Les simulateurs de pneus prévoient l'usure et les performances des pneus en fonction des conditions de piste et des stratégies de course. Ces outils aident les écuries à choisir les meilleurs pneus et à adapter leurs stratégies en temps réel.
+                        </p>
+                    </div>
+                    <div class="simulateur-card">
+                        <h4>Simulateurs de Stratégie</h4>
+                        <p>
+                            Les simulateurs de stratégie permettent aux écuries de tester différentes stratégies de course, comme les arrêts aux stands et les choix de pneus. Ces simulations prennent en compte les conditions météo, les performances des concurrents et les règles de la course.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Utilisées dans les Simulateurs -->
+            <div class="veille-technologies">
+                <h3 id="Technologies">3. Technologies Utilisées dans les Simulateurs</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h4>Python</h4>
+                        <p>Python est largement utilisé pour l'analyse de données, la télémétrie et l'intelligence artificielle. C'est un langage polyvalent et facile à apprendre.</p>
+                        <a href="https://www.python.org/" target="_blank" class="tech-link">En savoir plus sur Python</a>
+                    </div>
+                    <div class="tech-card">
+                        <h4>C++</h4>
+                        <p>C++ est utilisé pour les simulations en temps réel en raison de sa performance et de sa gestion fine de la mémoire. Il est souvent utilisé dans les moteurs de simulation.</p>
+                        <a href="https://isocpp.org/" target="_blank" class="tech-link">En savoir plus sur C++</a>
+                    </div>
+                    <div class="tech-card">
+                        <h4>MATLAB</h4>
+                        <p>MATLAB est utilisé pour la modélisation avancée et l'analyse numérique. Il est particulièrement utile pour les simulations mathématiques complexes.</p>
+                        <a href="https://www.mathworks.com/products/matlab.html" target="_blank" class="tech-link">En savoir plus sur MATLAB</a>
+                    </div>
+                    <div class="tech-card">
+                        <h4>OpenFOAM</h4>
+                        <p>OpenFOAM est un outil open source pour les simulations aérodynamiques (CFD). Il est largement utilisé en Formule 1 pour optimiser l'aérodynamisme des voitures.</p>
+                        <a href="https://openfoam.org/" target="_blank" class="tech-link">En savoir plus sur OpenFOAM</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact des Simulateurs sur la Performance -->
+            <div class="veille-impact">
+                <h3>4. Impact des Simulateurs sur la Performance</h3>
+                <p>
+                    Les simulateurs ont un impact significatif sur la performance des écuries de Formule 1. Voici quelques exemples concrets :
+                </p>
+                <ul>
+                    <li><strong>Réduction des coûts</strong> : Les simulations permettent de tester des configurations sans avoir à construire des prototypes physiques, ce qui réduit les coûts de développement.</li>
+                    <li><strong>Optimisation des stratégies</strong> : Les simulateurs de stratégie aident les écuries à prendre des décisions en temps réel pendant les courses, comme les arrêts aux stands et les choix de pneus.</li>
+                    <li><strong>Amélioration des performances des pilotes</strong> : Les simulateurs de pilotage permettent aux pilotes de s'entraîner dans des conditions réalistes, ce qui améliore leur réactivité et leur précision sur la piste.</li>
+                </ul>
+            </div>
+
+            <!-- Défis et Innovations Futures -->
+            <div class="veille-defis">
+                <h3>5. Défis et Innovations Futures</h3>
+                <p>
+                    Les simulateurs en Formule 1 évoluent rapidement grâce à des technologies émergentes :
+                </p>
+                <ul>
+                    <li><strong>Réalité Virtuelle (VR)</strong> : Pour des simulations de pilotage encore plus immersives, permettant aux pilotes de se sentir comme sur une vraie piste.</li>
+                    <li><strong>Intelligence Artificielle (IA)</strong> : Pour optimiser les simulations et les stratégies de course en analysant des millions de points de données en temps réel.</li>
+                    <li><strong>Réalité Augmentée (AR)</strong> : Pour superposer des données en temps réel pendant les simulations, aidant les ingénieurs à prendre des décisions plus éclairées.</li>
+                </ul>
+            </div>
 
             <!-- Ressources -->
             <div class="veille-ressources">
