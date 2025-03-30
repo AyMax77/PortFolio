@@ -601,65 +601,83 @@ img img {
 }
 /* Section Coordonnées */
 .coordonnees-section {
-    background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
-    position: relative;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    max-width: 1600px;
+  background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d) !important;
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  margin: 20px auto;
+  backdrop-filter: blur(5px);
 }
+
 .coordonnees-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .coordonnee-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .coordonnee-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.coordonnee-item i {
-    font-size: 24px;
-    color: #ff7300;
+.coordonnee-item i, .icon-image {
+  font-size: 24px;
+  min-width: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.icon-image {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .coordonnee-item p {
-    margin: 0;
-    font-size: 18px;
-    color: white;
+  margin: 0;
+  font-size: 1.1rem;
+  color: white;
+  margin-left: 15px;
 }
 
 .coordonnee-item a {
-    color: #ff7300;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #ffcc00;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 500;
 }
 
 .coordonnee-item a:hover {
-    color: #00dfd8;
-    text-decoration: underline;
+  color: #00fffc;
+  text-decoration: underline;
 }
 .icon-image {
     width: 24px; /* Même largeur que les icônes Font Awesome */
     height: 24px; /* Même hauteur que les icônes Font Awesome */
     object-fit: contain; /* Garde les proportions de l'image */
     margin-right: 15px; /* Espacement entre l'image et le texte */
+}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 
