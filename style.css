@@ -600,17 +600,20 @@ img img {
     width: 100%;
 }
 /* Section Coordonnées */
-#coordonnees h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: white;
+.coordonnees-section {
+  background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
+  padding: 60px 20px;
+    color: #ffffff;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
-
 .coordonnees-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
