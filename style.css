@@ -601,13 +601,13 @@ img img {
 }
 /* Section Coordonnées */
 .coordonnees-section {
-  background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
-  padding: 60px 20px;
-    color: #ffffff;
-    border-radius: 12px;
-    margin: 40px auto;
-    max-width: 800px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    position: relative;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .coordonnees-container {
     display: flex;
