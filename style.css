@@ -519,6 +519,18 @@ footer {
     }
 }
 
+img img {
+  width: 300px;
+  height: auto;
+}
+/* Ou pour des tailles différentes */
+.img-large {
+  width: 500px;
+}
+.img-small {
+  width: 200px;
+}
+
 .tech-grid, .simulation-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
