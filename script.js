@@ -97,6 +97,25 @@ function animateTimeline() {
     });
 }
 
+function openTab(tabName) {
+    // Cache tous les contenus d'onglets
+    const tabContents = document.getElementsByClassName("tab-content");
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active");
+    }
+    
+    // Désactive tous les onglets
+    const navTabs = document.getElementsByClassName("nav-tab");
+    for (let i = 0; i < navTabs.length; i++) {
+        navTabs[i].classList.remove("active");
+    }
+    
+    // Active l'onglet sélectionné
+    document.getElementById(tabName).classList.add("active");
+    event.currentTarget.classList.add("active");
+}
+
+
 // Écouter l'événement de scroll pour la timeline
 window.addEventListener('scroll', animateTimeline);
 
