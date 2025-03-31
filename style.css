@@ -185,6 +185,10 @@ button:hover {
             font-size: 18px; /* Taille du texte plus grande */
             margin: 10px 0; /* Espacement autour du texte */
         }
+        .timeline-item-content h3 {
+            font-size: 24px; /* Taille du titre plus grande */
+            margin-bottom: 10px; /* Espacement en bas du titre */
+        }
 footer {
     text-align: center;
     padding: 20px;
@@ -799,17 +803,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.3;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-p {
-  margin-bottom: 1.5rem;
 }
 
 /* Utilitaires */
