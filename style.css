@@ -617,7 +617,7 @@ img img {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   margin: 60px auto;
   width: 85%;
-  max-width: 1200px;
+  max-width: 1600px;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: all 0.5s ease;
@@ -643,7 +643,7 @@ img img {
   display: flex;
   align-items: center;
   padding: 18px 25px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.773);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   transition: all 0.4s ease;
@@ -652,7 +652,7 @@ img img {
 
 .coordonnee-item:hover {
   transform: translateY(-5px);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(0, 0, 0);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -687,7 +687,7 @@ img img {
 }
 
 .coordonnee-item a {
-  color: #ffec8b;
+  color: #3a00fb;
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 500;
