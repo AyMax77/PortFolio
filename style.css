@@ -382,6 +382,7 @@ footer {
     border-radius: 0; /* Pas de bord arrondi */
     box-shadow: none; /* Supprime l'ombre */
     min-width: 100px; /* Largeur minimale */
+    align-items: center;
 }
 
 .competence img {
@@ -540,6 +541,9 @@ p, li {
   height: 2px;
   background: #ffcc00;
   transition: width 0.3s ease;
+}
+.ressource-link a{
+  font-size: medium;
 }
 
 .ressource-link:hover {
