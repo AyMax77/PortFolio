@@ -2130,31 +2130,7 @@ body.dark-mode .footer-bottom {
 
 
 /* Optimisations supplémentaires pour les appareils mobiles */
-@media (max-width: 480px) {
-  html {
-    font-size: 50%;
-  }
-  
-  .slider-content h1 {
-    font-size: 2.8rem;
-  }
-  
-  .section-header h2 {
-    font-size: 2.8rem;
-  }
-  
-  .timeline::before {
-    left: 8px;
-  }
-  
-  .timeline-item::before {
-    left: 0;
-  }
-  
-  .timeline-item {
-    padding-left: 2rem;
-  }
-}
+
 
 /* Accessibilité améliorée */
 button:focus,
