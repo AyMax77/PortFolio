@@ -419,28 +419,27 @@ footer {
 }
 
 /* Section Veille Technologique */
-/* Section Veille Technologique */
-/* Styles généraux */
+
 /* Styles généraux */
 #Veille {
   background: linear-gradient(to right, #1a1a2e, #16213e);
   color: white;
   padding: 50px 20px;
   font-family: 'Arial', sans-serif;
+  transition: background 0.5s ease-in-out;
 }
 
 h3 {
   font-size: 26px;
   text-align: center;
   margin-bottom: 15px;
-
+  transition: color 0.3s ease;
 }
 
 h4 {
   font-size: 22px;
   margin-bottom: 15px;
-
-
+  transition: color 0.3s ease;
 }
 
 /* Texte */
@@ -449,7 +448,7 @@ p, li {
   line-height: 1.8;
   text-align: center;
   margin-bottom: 15px;
-
+  transition: opacity 0.3s ease;
 }
 
 /* Images */
@@ -459,7 +458,7 @@ p, li {
   gap: 20px;
   margin: 20px 0;
   margin-bottom: 15px;
-
+  transition: transform 0.3s ease;
 }
 
 .img-large {
@@ -467,7 +466,12 @@ p, li {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
   margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.img-large:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
 }
 
 /* Sections */
@@ -478,7 +482,12 @@ p, li {
   margin: 30px 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Code Styling */
@@ -492,7 +501,11 @@ p, li {
   margin: 10px 0;
   font-size: 16px;
   margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
 
+.code:hover {
+  background: #1b4f72;
 }
 
 /* Cartes de simulateurs */
@@ -512,7 +525,12 @@ p, li {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.simulateur-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Grid Technologies */
@@ -522,7 +540,6 @@ p, li {
   gap: 20px;
   margin: 20px 0;
   margin-bottom: 15px;
-
 }
 
 .tech-card {
@@ -532,7 +549,12 @@ p, li {
   text-align: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.tech-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Ressources */
@@ -551,7 +573,7 @@ p, li {
   font-weight: 500;
   position: relative;
   padding: 5px 0;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .ressource-link::after {
@@ -564,7 +586,8 @@ p, li {
   background: #ffcc00;
   transition: width 0.3s ease;
 }
-.ressources-links a{
+
+.ressources-links a {
   font-size: medium;
 }
 
@@ -579,6 +602,7 @@ p, li {
 /* Version pour fond sombre */
 .dark-bg .ressource-link {
   color: #333;
+  transition: color 0.3s ease;
 }
 
 .dark-bg .ressource-link:hover {
@@ -588,6 +612,7 @@ p, li {
 .dark-bg .ressource-link::after {
   background: #ff7300;
 }
+
 
 
 /* Section Coordonnées */
