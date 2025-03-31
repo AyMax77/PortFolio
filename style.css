@@ -422,16 +422,9 @@ footer {
   font-family: 'Arial', sans-serif;
 }
 
-.section-background {
-  max-width: 1200px;
-  margin: auto;
-  border-radius: 10px;
-  padding: 30px;
-}
-
 /* Titres */
 h2, h3, h4 {
-  color: #ffcc00;
+  color: white;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
