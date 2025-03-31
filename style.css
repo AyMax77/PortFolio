@@ -647,6 +647,7 @@ p, li {
   margin-left: 20px;
   flex-grow: 1;
   font-size: 1.5rem; /* Environ 24px */
+  text-align: left;
 }
 
 .coordonnee-item a {
