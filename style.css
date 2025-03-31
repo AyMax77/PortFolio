@@ -648,6 +648,8 @@ pointer-events: none;
 .coordonnees-container {
 /* Vos styles existants */
 max-width: 900px; /* Ajustez selon vos besoins */
+align-items: center;
+text-align: center;
 }
 
 .coordonnee-item {
