@@ -416,6 +416,13 @@ footer {
   font-family: 'Arial', sans-serif;
 }
 
+
+
+.veille p, li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 /* Images */
 .img {
   display: flex;
