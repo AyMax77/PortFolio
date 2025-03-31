@@ -1240,7 +1240,6 @@ header.scrolled {
   top: 0;
   width: 0.2rem;
   height: 100%;
-  background-color: var(--primary);
 }
 
 .timeline-item {
@@ -1257,8 +1256,6 @@ header.scrolled {
   width: 1.6rem;
   height: 1.6rem;
   border-radius: 50%;
-  background-color: var(--light);
-  border: 0.3rem solid var(--primary);
   z-index: 1;
 }
 
