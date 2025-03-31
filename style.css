@@ -92,7 +92,7 @@ h1 {
 h2 {
     text-align: center;
     font-family: 'Arial', sans-serif;
-    font-size: 70px;
+    font-size: 170px;
     font-weight: bold; /* Texte en gras */
     background: white; /* Dégradé plus foncé */
     -webkit-background-clip: text; /* Applique le dégradé au texte */
@@ -414,21 +414,49 @@ footer {
 /* Section Veille Technologique */
 /* Section Veille Technologique */
 /* Styles généraux */
+/* Styles généraux */
 #Veille {
   background: linear-gradient(to right, #1a1a2e, #16213e);
   color: white;
   padding: 50px 20px;
   font-family: 'Arial', sans-serif;
 }
-.veille h3{
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 20px;
+
+.section-background {
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px;
 }
 
-.veille p, li {
-  font-size: 16px;
-  line-height: 1.6;
+/* Titres */
+h2, h3, h4 {
+  color: #ffcc00;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+/* Texte */
+p, li {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
 }
 
 /* Images */
@@ -448,9 +476,10 @@ footer {
 /* Sections */
 .section {
   background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
-  margin: 20px 0;
+  margin: 30px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Code Styling */
@@ -462,6 +491,7 @@ footer {
   color: #ffcc00;
   overflow-x: auto;
   margin: 10px 0;
+  font-size: 16px;
 }
 
 /* Cartes de simulateurs */
@@ -474,10 +504,11 @@ footer {
 
 .simulateur-card {
   background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
   width: 45%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 /* Grid Technologies */
@@ -490,31 +521,35 @@ footer {
 
 .tech-card {
   background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  padding: 25px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Ressources */
 .ressources-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
+  justify-content: center;
 }
 
 .ressource-link {
   background: #ffcc00;
   color: black;
-  padding: 10px 15px;
+  padding: 12px 18px;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
   transition: 0.3s;
 }
 
 .ressource-link:hover {
   background: #ffaa00;
+  transform: scale(1.1);
 }
+
 
 /* Section Coordonnées */
 /* Animation */
