@@ -148,6 +148,7 @@ button:hover {
     width: 65%;  /* Tu peux ajuster la taille de l'image ici */
     max-width: 500px;
     align-items: center;
+    text-align: center;
 }
 .timeline {
     margin-top: 40px;
