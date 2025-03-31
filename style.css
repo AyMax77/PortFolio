@@ -87,17 +87,20 @@ h1 {
     color: #333;
     justify-content: center;
     text-align: center;
+    font-size: 35px;
 
 }
 h2 {
     text-align: center;
     font-family: 'Arial', sans-serif;
-    font-size: 170px;
     font-weight: bold; /* Texte en gras */
     background: white; /* Dégradé plus foncé */
     -webkit-background-clip: text; /* Applique le dégradé au texte */
     background-clip: text;
     color: transparent; /* Cache la couleur de base pour afficher le dégradé */
+    font-size: 60px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 10px;
 }
 
 
@@ -422,15 +425,6 @@ footer {
   font-family: 'Arial', sans-serif;
 }
 
-/* Titres */
-
-
-h2 {
-  font-size: 32px;
-  border-bottom: 2px solid #ffcc00;
-  padding-bottom: 10px;
-}
-
 h3 {
   font-size: 26px;
 }
@@ -443,7 +437,6 @@ h4 {
 p, li {
   font-size: 18px;
   line-height: 1.8;
-  text-align: justify;
 }
 
 /* Images */
