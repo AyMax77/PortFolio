@@ -194,6 +194,7 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
+    font-size: medium;
 }
 .container {
     display: grid;
@@ -419,8 +420,11 @@ footer {
   padding: 50px 20px;
   font-family: 'Arial', sans-serif;
 }
-
-
+.veille h3{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .veille p, li {
   font-size: 16px;
