@@ -145,8 +145,9 @@ button:hover {
     text-align: center;
 }
 .presentation-image img {
-    width: 80%;  /* Tu peux ajuster la taille de l'image ici */
+    width: 65%;  /* Tu peux ajuster la taille de l'image ici */
     max-width: 500px;
+    align-items: center;
 }
 .timeline {
     margin-top: 40px;
@@ -372,6 +373,7 @@ footer {
     max-width: 800px; /* Largeur max pour éviter que ça s'étale trop */
     margin: auto; /* Centre la section */
     text-align: center; /* Centre le texte */
+    align-items: center;
 }
 
 .competence {
@@ -437,6 +439,7 @@ h4 {
 p, li {
   font-size: 18px;
   line-height: 1.8;
+  text-align: center;
 }
 
 /* Images */
