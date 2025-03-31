@@ -615,11 +615,11 @@ img img {
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  margin: 60px auto;
   width: 95%;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: all 0.5s ease;
+  margin: 80px 20px;
 }
 
 .coordonnees-container {
