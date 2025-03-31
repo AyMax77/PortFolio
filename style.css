@@ -2130,9 +2130,7 @@ body.dark-mode .footer-bottom {
 
 /* Effet de focus pour les champs du formulaire */
 .form-group input:focus,
-.form-group textarea:focus {
-  box-shadow: 0 0 0 3px rgba(41, 99, 255, 0.3);
-}
+
 
 /* Optimisations supplémentaires pour les appareils mobiles */
 @media (max-width: 480px) {
