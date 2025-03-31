@@ -7,71 +7,49 @@ body {
     animation: gradientAnimation 10s ease infinite;
     color: #333;
 }
-/* Structure de base */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(45deg, #007cf0, #00dfd8, #ff7300, #6a0dad);
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
+.section-background {
+    background: linear-gradient(45deg, #ff6ec7, #ffcc70, #6a82fb, #fc5c7d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    position: relative;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Conteneur principal */
-.main-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Style commun pour toutes les sections */
-.section-wrapper {
-  margin: 40px 0;
-  padding: 0 20px; /* Marge interne pour éviter le collage sur petits écrans */
-}
-
-.section-block {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  padding: 40px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-bottom: 60px; /* Espace entre les sections */
-}
-
-/* Adaptation pour les petites sections comme coordonnées */
-.compact-section {
-  padding: 30px;
-  margin-bottom: 40px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .section-block {
-      padding: 25px;
-      margin-left: 10px;
-      margin-right: 10px;
-  }
-  
-  .section-wrapper {
-      padding: 0 10px;
-  }
-}
-
-/* Exemple d'application à votre section coordonnées */
-.coordonnees-section {
-  /* Vos styles existants */
-  width: auto; /* S'adapte au conteneur */
-  margin: 0; /* Géré par section-wrapper */
-  max-width: none; /* Géré par le conteneur principal */
-}
-
-/* Animation du dégradé (conservez votre existant) */
+/* Animation du dégradé */
 @keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.animated-bg {
+    background: linear-gradient(45deg, #007cf0, #00dfd8, #ff7300, #6a0dad);
+    background-size: 400% 400%;
+    animation: colorShift 8s ease infinite;
+    position: relative;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Animation fluide du dégradé */
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 nav {
@@ -637,11 +615,12 @@ img img {
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  width: 95%;
+  margin: 60px auto;
+  width: 85%;
+  max-width: 1600px;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: all 0.5s ease;
-  margin: 80px 20px;
 }
 
 .coordonnees-container {
