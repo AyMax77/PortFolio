@@ -199,7 +199,7 @@ window.addEventListener('scroll', () => {
 
 // Conserver les fonctions existantes
 function openCV() {
-    window.open('https://aymax77.github.io/PortFolio/image/Dehay_Maxime.pdf', '_blank');
+    window.open('https://aymax77.github.io/PortFolio/image/Dehay_Maxime_Cv.pdf', '_blank');
 }
 
 // Classe VoitureF1 pour la simulation
