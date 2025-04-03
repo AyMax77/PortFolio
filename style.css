@@ -604,6 +604,74 @@ p, li {
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
 }
 
+
+.complexity-section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+}
+
+.complexity-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.text-content {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.complexity-text h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #e10600;
+  font-size: 1.8em;
+}
+
+.complexity-text p,
+.complexity-text ul {
+  text-align: center;
+  margin: 15px auto;
+  max-width: 80%;
+}
+
+.complexity-text li {
+  list-style-position: inside;
+  text-align: left;
+  display: inline-block;
+  margin: 8px 15px;
+  padding-left: 5px;
+}
+
+.complexity-image {
+  flex: 1;
+  text-align: center;
+}
+
+.complexity-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .complexity-section {
+      flex-direction
 /* Sections */
 .section {
   background: rgba(255, 255, 255, 0.1);
