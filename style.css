@@ -497,30 +497,33 @@ p, li {
 /* Conteneur principal */
 .physics-section {
   display: flex;
-  flex-direction: row; /* Texte à gauche, image à droite */
-  gap: 30px; /* Espace entre texte et image */
-  align-items: flex-start; /* Alignement en haut */
+  flex-direction: row;
+  gap: 30px;
+  align-items: center; /* Changé de flex-start à center pour centrer verticalement */
   margin: 30px 0;
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.05); /* Fond légèrement visible */
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
+  min-height: 250px; /* Hauteur minimale pour garantir l'espace */
 }
 
-/* Contenu texte (toujours à gauche) */
 .physics-content {
   flex: 1;
   min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre le contenu verticalement */
+  height: 100%; /* Prend toute la hauteur disponible */
 }
 
-/* Conteneur image (toujours à droite) */
 .physics-image {
   flex: 1;
   min-width: 45%;
   text-align: center;
-  align-self: center; /* Centre verticalement l'image */
+  align-self: center;
 }
 
-/* Style des images */
+/* Le reste du CSS reste inchangé */
 .physics-image img {
   max-width: 100%;
   height: auto;
@@ -530,12 +533,10 @@ p, li {
   transition: transform 0.3s ease;
 }
 
-/* Effet de survol sur les images */
 .physics-image img:hover {
   transform: scale(1.02);
 }
 
-/* Légende des images */
 .image-caption {
   display: block;
   font-size: 0.85em;
@@ -545,7 +546,6 @@ p, li {
   text-align: center;
 }
 
-/* Style pour les formules */
 .code {
   font-family: 'Courier New', monospace;
   background-color: rgba(225, 6, 0, 0.1);
@@ -554,24 +554,23 @@ p, li {
   border-left: 3px solid #e10600;
 }
 
-/* Responsive : empilement sur mobile */
 @media (max-width: 768px) {
   .physics-section {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
+    min-height: auto; /* Supprime la hauteur fixe en mobile */
   }
   
   .physics-content, 
   .physics-image {
-      min-width: 100%;
+    min-width: 100%;
   }
   
   .physics-image {
-      margin-top: 15px;
+    margin-top: 15px;
   }
 }
 
-/* Animation d'apparition */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
