@@ -613,47 +613,50 @@ p, li {
   background: #ff7300;
 }
 
-/* Style du tableau CEJM avec fond transparent */
+/* Style du tableau CEJM avec texte agrandi */
 .cejm-table {
   width: 100%;
   border-collapse: collapse;
   margin: 25px 0;
-  font-size: 0.9em;
+  font-size: 1.1em; /* Taille augmentée (anciennement 0.9em) */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: transparent;
+  line-height: 1.5; /* Espacement entre les lignes amélioré */
 }
 
 /* En-têtes du tableau */
 .cejm-table th {
-  background-color: rgba(225, 6, 0, 0.8); /* Rouge F1 semi-transparent */
+  background-color: rgba(225, 6, 0, 0.8);
   color: white;
   text-align: left;
   font-weight: bold;
-  padding: 12px 15px;
+  padding: 15px 20px; /* Padding augmenté */
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px; /* Espacement des lettres légèrement augmenté */
   border: none;
+  font-size: 1.05em; /* Taille légèrement supérieure aux cellules */
 }
 
 /* Cellules du tableau */
 .cejm-table td {
-  padding: 12px 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 20px; /* Padding augmenté */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Bordure légèrement plus visible */
   vertical-align: top;
   background-color: transparent;
 }
 
 /* Effet au survol */
 .cejm-table tr:hover td {
-  background-color: rgba(225, 6, 0, 0.05); /* Légère teinte rouge au survol */
+  background-color: rgba(225, 6, 0, 0.08); /* Effet légèrement plus prononcé */
   transition: background-color 0.2s ease;
 }
 
 /* Style spécifique pour la première colonne */
 .cejm-table td:first-child {
   font-weight: bold;
-  color: #e10600; /* Rouge F1 */
+  color: #e10600;
   width: 20%;
+  font-size: 1.15em; /* Taille légèrement supérieure */
 }
 
 /* Style responsive */
@@ -661,12 +664,13 @@ p, li {
   .cejm-table {
     display: block;
     overflow-x: auto;
+    font-size: 1em; /* Taille légèrement réduite en mobile */
   }
   
   .cejm-table th, 
   .cejm-table td {
-    padding: 8px 10px;
-    font-size: 0.85em;
+    padding: 12px 15px; /* Padding réduit mais toujours plus grand qu'avant */
+    min-width: 120px; /* Empêche le texte de devenir trop compressé */
   }
 }
 
