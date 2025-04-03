@@ -494,47 +494,91 @@ p, li {
   }
 }
 
+/* Conteneur principal */
 .physics-section {
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  margin: 25px 0;
+  flex-direction: row; /* Texte à gauche, image à droite */
+  gap: 30px; /* Espace entre texte et image */
+  align-items: flex-start; /* Alignement en haut */
+  margin: 30px 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.05); /* Fond légèrement visible */
+  border-radius: 8px;
 }
 
+/* Contenu texte (toujours à gauche) */
 .physics-content {
   flex: 1;
   min-width: 50%;
 }
 
+/* Conteneur image (toujours à droite) */
 .physics-image {
   flex: 1;
   min-width: 45%;
   text-align: center;
+  align-self: center; /* Centre verticalement l'image */
 }
 
+/* Style des images */
 .physics-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
 }
 
+/* Effet de survol sur les images */
+.physics-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Légende des images */
 .image-caption {
+  display: block;
   font-size: 0.85em;
-  color: #666;
-  margin-top: 8px;
+  color: #aaa;
+  margin-top: 10px;
   font-style: italic;
+  text-align: center;
 }
 
+/* Style pour les formules */
+.code {
+  font-family: 'Courier New', monospace;
+  background-color: rgba(225, 6, 0, 0.1);
+  padding: 8px 12px;
+  border-radius: 4px;
+  border-left: 3px solid #e10600;
+}
+
+/* Responsive : empilement sur mobile */
 @media (max-width: 768px) {
   .physics-section {
       flex-direction: column;
+      gap: 20px;
+  }
+  
+  .physics-content, 
+  .physics-image {
+      min-width: 100%;
   }
   
   .physics-image {
-      margin-top: 20px;
-      width: 100%;
+      margin-top: 15px;
   }
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.physics-section {
+  animation: fadeIn 0.6s ease-out forwards;
 }
 /* Images */
 .img {
