@@ -604,7 +604,7 @@ p, li {
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
 }
 
-
+/*Complexity section*/
 .complexity-section {
   display: flex;
   gap: 40px;
@@ -671,7 +671,25 @@ p, li {
 
 @media (max-width: 768px) {
   .complexity-section {
-      flex-direction
+      flex-direction: column;
+  }
+  
+  .complexity-text {
+      min-height: auto;
+      padding-bottom: 20px;
+  }
+  
+  .text-content,
+  .complexity-text p,
+  .complexity-text ul {
+      max-width: 100%;
+  }
+  
+  .complexity-text li {
+      display: block;
+      text-align: center;
+  }
+}
 /* Sections */
 .section {
   background: rgba(255, 255, 255, 0.1);
