@@ -514,6 +514,8 @@ p, li {
   flex-direction: column;
   justify-content: center; /* Centre le contenu verticalement */
   height: 100%; /* Prend toute la hauteur disponible */
+  margin-top: 25px;
+
 }
 
 .physics-image {
